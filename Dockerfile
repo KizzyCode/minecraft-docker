@@ -1,9 +1,9 @@
 FROM alpine:latest
 
-# The latest server from https://www.minecraft.net/de-de/download/server
-ENV MINECRAFT_URL https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar
+# The latest server from https://www.minecraft.net/en-us/download/server
+ENV MINECRAFT_URL https://piston-data.mojang.com/v1/objects/c9df48efed58511cdd0213c56b9013a7b5c9ac1f/server.jar
 
-RUN apk add --no-cache openjdk17-jre
+RUN apk add --no-cache openjdk17-jre-headless
 ADD ${MINECRAFT_URL} /usr/libexec/minecraft-server.jar
 COPY start.sh /usr/libexec/minecraft-server.sh
 
