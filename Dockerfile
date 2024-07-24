@@ -4,8 +4,8 @@ FROM alpine:latest
 ENV MINECRAFT_URL https://piston-data.mojang.com/v1/objects/450698d1863ab5180c25d7c804ef0fe6369dd1ba/server.jar
 
 # Install JVM and add minecraft user
-RUN apk add --no-cache openjdk17-jre-headless
-RUN adduser -S -H -D -u 1000 -s /sbin/nologin minecraft
+RUN apk add --no-cache openjdk21-jre-headless
+RUN adduser -S -H -D -u 10000 -s /sbin/nologin minecraft
 
 # Install server
 ADD ${MINECRAFT_URL} /usr/libexec/minecraft-server.jar
