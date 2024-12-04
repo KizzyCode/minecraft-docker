@@ -1,7 +1,7 @@
 FROM alpine:latest
 
-# The 1.21 server from https://www.minecraft.net/en-us/download/server
-ENV MINECRAFT_URL https://piston-data.mojang.com/v1/objects/450698d1863ab5180c25d7c804ef0fe6369dd1ba/server.jar
+# The 1.21.4 server from https://www.minecraft.net/en-us/download/server
+ENV MINECRAFT_URL https://piston-data.mojang.com/v1/objects/4707d00eb834b446575d89a61a11b5d548d8c001/server.jar
 
 # Install JVM and add minecraft user
 RUN apk add --no-cache openjdk21-jre-headless
