@@ -6,7 +6,7 @@ ARG MINECRAFT_URL=https://piston-data.mojang.com/v1/objects/6bce4ef400e4efaa63a1
 # Install JVM and add minecraft user
 RUN apt-get update \
     && apt-get upgrade --yes \
-    && apt-get install --yes --no-install-recommends default-jre \
+    && apt-get install --yes --no-install-recommends default-jre-headless \
     && apt-get clean
 RUN useradd --system --uid 10000 --shell /sbin/nologin minecraft
 
