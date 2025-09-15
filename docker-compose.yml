@@ -1,9 +1,9 @@
 services:
   minecraft:
-    build:
-      context: ./
-      dockerfile: Dockerfile
+    build: ./
     stop_signal: SIGTERM
+    stdin_open: true
+    tty: true
     ports:
       - "25565:25565"
     volumes:
