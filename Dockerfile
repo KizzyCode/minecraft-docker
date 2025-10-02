@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
-# The 1.21.8 server from https://www.minecraft.net/en-us/download/server
-ARG MINECRAFT_URL=https://piston-data.mojang.com/v1/objects/6bce4ef400e4efaa63a13d5e6f6b500be969ef81/server.jar
+# The 1.21.9 server from https://www.minecraft.net/en-us/download/server
+ARG MINECRAFT_URL=https://piston-data.mojang.com/v1/objects/11e54c2081420a4d49db3007e66c80a22579ff2a/server.jar
 
 # Install JVM and add minecraft user
 RUN apt-get update \
